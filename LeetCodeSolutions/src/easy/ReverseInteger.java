@@ -2,11 +2,11 @@ package easy;
 
 public class ReverseInteger {
 	
-	/*
+	/**
 	 * Reverse digits of an integer.
 	 * Example1: x = 123, return 321
 	 * Example2: x = -123, return -321
-	 */
+	 **/
 
 	public static void main(String[] args) {
 		int input = 123;

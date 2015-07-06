@@ -2,7 +2,7 @@ package easy;
 
 public class ZigZagConversion {
 
-	/*
+	/**
 	 * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number
 	 * of rows like this:(you may want to display this pattern in a fixed font for better legibility)
 	 * 	P   A   H   N
@@ -12,7 +12,7 @@ public class ZigZagConversion {
 	 * Write the code that will take a string and make this conversion given a number of rows:
 	 * string convert(string text, int nRows);
 	 * convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
-	 */
+	 **/
 	public static void main(String[] args) {
 		String s = "PAYPALISHIRING";
 		System.out.println(convert(s, 3));

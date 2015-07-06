@@ -2,9 +2,9 @@ package easy;
 
 public class ReverseLinkedList {
 	
-	/*
+	/**
 	 * Reverse a singly linked list
-	 */
+	 **/
 
 	public static void main(String[] args) {
 		ListNode[] list = new ListNode[10];

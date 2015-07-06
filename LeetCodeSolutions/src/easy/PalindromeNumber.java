@@ -2,9 +2,9 @@ package easy;
 
 public class PalindromeNumber {
 
-	/*
+	/**
 	 * Determine whether an integer is a palindrome. Do this without extra space.
-	 */
+	 **/
 	public static void main(String[] args) {
 		int input = 1234321;
 		System.out.println(isPalindrome(input));
