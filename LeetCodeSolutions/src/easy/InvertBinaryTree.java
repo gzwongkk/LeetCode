@@ -3,7 +3,7 @@ package easy;
 import java.util.LinkedList;
 
 public class InvertBinaryTree {
-	/*
+	/**
 	 * Invert a binary tree.
 			 4
 		   /   \
@@ -20,9 +20,9 @@ public class InvertBinaryTree {
 		9   6 3   1
 	 * Trivia:
 	 * This problem was inspired by this original tweet by Max Howell:
-	 * 	Google: 90% of our engineers use the software you wrote (homebrew), but you
-	 * can't invert a binary tree on a whiteboard so fuck off.
-	 */
+	 * 		Google: 90% of our engineers use the software you wrote (homebrew), but you
+	 * 		can't invert a binary tree on a whiteboard so fuck off.
+	 **/
 
 	public static void main(String[] args) {
 		InvertBinaryTree solution = new InvertBinaryTree();
