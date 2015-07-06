@@ -1,4 +1,4 @@
-package solutions;
+package medium;
 
 public class LongestPalindromicSubtring {
 	

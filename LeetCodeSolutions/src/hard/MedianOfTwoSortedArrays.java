@@ -1,4 +1,4 @@
-package solutions;
+package hard;
 
 public class MedianOfTwoSortedArrays {
 	/*
