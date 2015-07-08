@@ -35,10 +35,9 @@ public class LongestSubstringWithoutRepeatingCharacters {
 		return max;
     }
 
-	//Another version is to use an array instead of a hashmap, but somehow it exceeds time limit.
+	//Another version is to use an array instead of a HashMap, but somehow it exceeds time limit.
 	//But this version is faster in C++. It reveals that making any object in Java is slower than in C++.
-	/*
-	public static int lengthOfLongestSubstring(String s){
+	public static int lengthOfLongestSubstringArray(String s){
 		int max = 0, i = 0, j = 0, n = s.length();
 		boolean[] bucket = new boolean[256];
 		while( j < n ){
@@ -55,5 +54,5 @@ public class LongestSubstringWithoutRepeatingCharacters {
 			++j;
 		}
 		return (max>n-i)?max:n-i;
-	}*/
+	}
 }

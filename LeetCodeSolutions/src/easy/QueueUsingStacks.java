@@ -22,6 +22,10 @@ public class QueueUsingStacks {
 	
 	public static void main(String[] args) {
 		QueueUsingStacks myQueue = new QueueUsingStacks();
+		myQueue.push(10);
+		System.out.println(myQueue.peek());
+		myQueue.pop();
+		System.out.println(myQueue.empty());
 	}
 	
 	/*

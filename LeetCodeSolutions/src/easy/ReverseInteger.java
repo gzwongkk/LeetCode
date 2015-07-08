@@ -30,8 +30,7 @@ public class ReverseInteger {
 	/*
 	 * another version that uses int only, use value checking for overflow detection
 	 */
-	/*
-	public static int reverse(int x){
+	public static int reverseValueCheck(int x){
 		int ans = 0;
 		boolean negative = false;
 		if( x < 0 ) negative = true;
@@ -43,5 +42,5 @@ public class ReverseInteger {
 			x /= 10;
 		}
 		return negative?-ans:ans;
-	}*/
+	}
 }

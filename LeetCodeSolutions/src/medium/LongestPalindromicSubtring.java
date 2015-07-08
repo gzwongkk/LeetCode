@@ -50,8 +50,7 @@ public class LongestPalindromicSubtring {
 	/*
 	 * O(n^2) in time and space with Dynamic programming.
 	 */
-	/*
-	public static String longestPalindrome(String s){
+	public static String longestPalindromeDP(String s){
 		if( s == null )
 			return null;
 		boolean[][] palindrome = new boolean[1000][1000];
@@ -76,5 +75,5 @@ public class LongestPalindromicSubtring {
 			}
 		}
 		return s.substring(start, start + length);
-	}*/
+	}
 }
