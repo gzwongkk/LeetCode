@@ -16,7 +16,6 @@ public class RemoveNthNodeFromEnd {
 	 */
 	
 	public static void main(String[] args) {
-		RemoveNthNodeFromEnd sol = new RemoveNthNodeFromEnd();
 		ListNode[] list = new ListNode[5];
 		for(int i = 0; i < list.length; ++i)
 			list[i] = new ListNode(i);
