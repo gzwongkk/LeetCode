@@ -1,5 +1,7 @@
 package medium;
 
+import util.ListNode;
+
 public class AddTwoNumbers {
 	
 	/**
@@ -10,12 +12,6 @@ public class AddTwoNumbers {
 	 * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 	 * Output: 7 -> 0 -> 8
 	 **/
-	
-	public static class ListNode{
-		int val;
-		ListNode next;
-		ListNode(int x){ val = x;}
-	}
 	
 	public static void main(String[] args) {
 		ListNode l1 = new ListNode(2);

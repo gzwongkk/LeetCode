@@ -1,5 +1,7 @@
 package easy;
 
+import util.ListNode;
+
 public class ReverseLinkedList {
 	
 	/**
@@ -25,25 +27,5 @@ public class ReverseLinkedList {
 			cur = next;
 		}
 		return prev;
-	}
-	
-	public static class ListNode{
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-		ListNode(int x, ListNode n) { 
-			val = x;
-			next = n;
-		}
-		@Override
-		public String toString(){
-			String s = "";
-			ListNode temp = this;
-			while( temp != null ){
-				s += temp.val+" ";
-				temp = temp.next;
-			}
-			return s;
-		}
 	}
 }
