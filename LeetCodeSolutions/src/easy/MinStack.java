@@ -3,7 +3,7 @@ package easy;
 import java.util.Stack;
 
 public class MinStack {
-	
+
 	/**
 	 * Design a stack that supports push, pop, top, and
 	 * retrieving the minimum element in constant time.
@@ -33,7 +33,7 @@ public class MinStack {
 		s.pop();
 		System.out.println(""+s.top()+"\t"+s.getMin());
 	}
-	
+
 	/*
 	 * To have a min value stored, using the property of stack, it can 
 	 * act as an element so that it creates some sort of window or level.
@@ -41,10 +41,10 @@ public class MinStack {
 	 * is popped back, thus popping twice is required.
 	 * Was trying not to use library stack but memory limit exceeded.
 	 */
-	
+
 	private Stack<Integer> ms = new Stack<Integer>();;
 	private int min = Integer.MAX_VALUE;
-	
+
 	public void push(int x){
 		if( x <= min ){
 			ms.push(min);
@@ -52,7 +52,7 @@ public class MinStack {
 		}
 		ms.push(x);
 	}
-	
+
 	public void pop(){
 		if(ms.isEmpty())
 			return;
@@ -67,7 +67,7 @@ public class MinStack {
 	public int top(){
 		return ms.isEmpty()?0:ms.peek();
 	}
-	
+
 	public int getMin(){
 		return min;
 	}

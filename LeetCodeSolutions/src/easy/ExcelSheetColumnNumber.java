@@ -19,7 +19,7 @@ public class ExcelSheetColumnNumber {
 			ans = ans * 26 + s.charAt(i) - 64;
 		return ans;
 	}
-	
+
 	public static int titleToNumberCompact(String s){
 		return s.length() == 0?0:(s.charAt(s.length()-1)-64)+26*titleToNumberCompact(s.substring(0, s.length()-1));
 	}

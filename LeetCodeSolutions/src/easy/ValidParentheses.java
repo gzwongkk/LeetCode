@@ -22,27 +22,27 @@ public class ValidParentheses {
 		int size = s.length();
 		for( int i = 0; i < size; ++i ){
 			switch(s.charAt(i)){
-			case '(':case '{':case '[':
-				stack.push(s.charAt(i));
-				break;
-			case ')':
-				if(!stack.isEmpty() && stack.peek() == '(')
-					stack.pop();
-				else
-					return false;
-				break;
-			case '}':
-				if(!stack.isEmpty() && stack.peek() == '{')
-					stack.pop();
-				else
-					return false;
-				break;
-			case ']':
-				if(!stack.isEmpty() && stack.peek() == '[')
-					stack.pop();
-				else
-					return false;
-				break;
+				case '(':case '{':case '[':
+					stack.push(s.charAt(i));
+					break;
+				case ')':
+					if(!stack.isEmpty() && stack.peek() == '(')
+						stack.pop();
+					else
+						return false;
+					break;
+				case '}':
+					if(!stack.isEmpty() && stack.peek() == '{')
+						stack.pop();
+					else
+						return false;
+					break;
+				case ']':
+					if(!stack.isEmpty() && stack.peek() == '[')
+						stack.pop();
+					else
+						return false;
+					break;
 			}
 		}
 		return stack.isEmpty();

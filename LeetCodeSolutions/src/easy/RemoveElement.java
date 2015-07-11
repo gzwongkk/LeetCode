@@ -28,7 +28,7 @@ public class RemoveElement {
 		}
 		return newSize;
 	}
-	
+
 	//Similar runtime
 	public static int removeElementAssignment(int[] nums, int val){
 		int newSize = 0;

@@ -40,7 +40,7 @@ public class StrStr {
 		}
 		return -1;
 	}
-	
+
 	public static int strStrClean(String haystack, String needle){
 		int size = haystack.length(), length = needle.length();
 		if( length == 0 ) return 0;
@@ -52,7 +52,7 @@ public class StrStr {
 			}
 		}
 	}
-	
+
 	public static int strStrRevised(String haystack, String needle) {
 		int size = haystack.length(), length = needle.length();
 		if( length == 0 ) return 0;
@@ -60,11 +60,11 @@ public class StrStr {
 		for( int ans = 0; ans < size-length+1 ; ++ans){
 			int n = 0;
 			while( ans+n < size && n < length 
-			    && haystack.charAt(ans+n) == needle.charAt(n)){
+					&& haystack.charAt(ans+n) == needle.charAt(n)){
 				++n;
 			}
 			if( n == length ) return ans;
 		}
 		return -1;
-    }
+	}
 }

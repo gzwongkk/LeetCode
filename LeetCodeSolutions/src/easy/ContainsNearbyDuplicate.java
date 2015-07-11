@@ -29,7 +29,7 @@ public class ContainsNearbyDuplicate {
 		}
 		return false;
 	}
-	
+
 	/*
 	 * Or use a HashMap to keep track of the sliding window.
 	 * Note that HashMap replace old value with same key.

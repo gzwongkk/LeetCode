@@ -30,7 +30,7 @@ public class HouseRobber {
 		}
 		return Math.max(mi, mj);
 	}
-	
+
 	public static int robArray(int[] nums){
 		if( nums == null || nums.length == 0 ) return 0;
 		else if( nums.length == 1 ) return nums[0];

@@ -19,7 +19,7 @@ public class QueueUsingStacks {
 	 * 		Your may assume that all operations are valid ( for example, no pop or peek
 	 * 			operations will be called on an empty queue).
 	 */
-	
+
 	public static void main(String[] args) {
 		QueueUsingStacks myQueue = new QueueUsingStacks();
 		myQueue.push(10);
@@ -27,33 +27,33 @@ public class QueueUsingStacks {
 		myQueue.pop();
 		System.out.println(myQueue.empty());
 	}
-	
+
 	/*
 	 * negative times a negative is a positive!
 	 * pushing a stack into another stack makes it a queue!
 	 */
 	private Stack<Integer> stack = new Stack<Integer>();
 	private Stack<Integer> queue = new Stack<Integer>();
-	
+
 	private void organize(){
 		while( !stack.isEmpty() )
 			queue.push(stack.pop());
 	}
-	
+
 	public void push(int x){
 		stack.push(x);
 	}
-	
+
 	public void pop(){
 		if(queue.isEmpty())	organize();
 		queue.pop();
 	}
-	
+
 	public int peek(){
 		if(queue.isEmpty())	organize();
 		return queue.peek();
 	}
-	
+
 	public boolean empty(){
 		return stack.isEmpty()&&queue.isEmpty();
 	}

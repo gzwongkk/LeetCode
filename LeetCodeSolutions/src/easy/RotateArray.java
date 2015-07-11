@@ -34,7 +34,7 @@ public class RotateArray {
 		for( int i = 0; i < nums.length; ++i )
 			nums[i] = newNums[i];
 	}
-	
+
 	public static void rotateSwap(int[] nums, int k){
 		k %= nums.length;
 		int half = nums.length/2, temp;
@@ -59,7 +59,7 @@ public class RotateArray {
 			nums[i+2*(half-i)-offset] = temp;
 		}
 	}
-	
+
 	public static void rotateSwapBack(int[] nums, int k){
 		for( int i = 0, n = nums.length; (k%=n)!= 0; n-= k){
 			for( int j = 0; j < k; ++j ){

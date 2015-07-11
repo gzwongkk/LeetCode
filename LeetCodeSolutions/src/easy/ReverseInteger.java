@@ -1,7 +1,7 @@
 package easy;
 
 public class ReverseInteger {
-	
+
 	/**
 	 * Reverse digits of an integer.
 	 * Example1: x = 123, return 321
@@ -12,20 +12,20 @@ public class ReverseInteger {
 		int input = 123;
 		System.out.println(reverse(input));
 	}
-	
+
 	/*
 	 * It is better to use a larger container i.e. long to hold the value so that
 	 * overflow can be easily detected. Moreover, negative value actually won't change
 	 * its value in division, so there is actually no need to worry about it.
 	 */
 	public static int reverse(int x) {
-        long ans = 0;
-        while( x != 0 ){
-            ans = ans*10+x%10;
-            x /= 10;
-        }
-        return (ans > Integer.MAX_VALUE || ans < Integer.MIN_VALUE)? 0:(int) ans;
-    }
+		long ans = 0;
+		while( x != 0 ){
+			ans = ans*10+x%10;
+			x /= 10;
+		}
+		return (ans > Integer.MAX_VALUE || ans < Integer.MIN_VALUE)? 0:(int) ans;
+	}
 
 	/*
 	 * another version that uses int only, use value checking for overflow detection

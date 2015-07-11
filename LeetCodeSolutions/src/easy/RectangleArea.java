@@ -1,7 +1,7 @@
 package easy;
 
 public class RectangleArea {
-	
+
 	/**
 	 * Find the total area covered by two rectilinear rectangles in a 2D plane.
 	 * Each rectangle is defined by its bottom left corner and top right corner
@@ -11,7 +11,7 @@ public class RectangleArea {
 	public static void main(String[] args) {
 		System.out.println(computeArea(-3,0,3,4,0,-1,9,2));
 	}
-	
+
 	/*
 	 * In probability, (A U B) = A + B - (A n B). Checking overlap is rather a 
 	 * venn diagram challenge.

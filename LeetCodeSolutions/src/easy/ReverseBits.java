@@ -7,7 +7,7 @@ public class ReverseBits {
 	 * return 964176192 (represented in binary as 00111001011110000010100101000000).
 	 * Follow up: if this function is called many times, how would you optimize it?
 	 */
-	
+
 	public static void main(String[] args) {
 		int input = 1;
 		System.out.println(reverseBits(input));
@@ -19,7 +19,7 @@ public class ReverseBits {
 	 */
 	public static int reverseBits(int n){
 		int ans = 0;
-		for(int i = 0; i < 31; ++i){
+		for( int i = 0; i < 31; ++i ){
 			ans += n & 1;
 			ans <<= 1;
 			n >>>= 1;

@@ -27,7 +27,7 @@ public class ExcelSheetColumnTitle {
 			ans += stack.pop();
 		return ans;
 	}
-	
+
 	public static String convertToTitleRecursive(int n){
 		return n == 0 ? "": convertToTitle(--n/26) + (char)(65+(n%26));
 	}

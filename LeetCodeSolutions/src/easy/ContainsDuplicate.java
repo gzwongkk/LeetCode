@@ -27,7 +27,7 @@ public class ContainsDuplicate {
 		}
 		return false;
 	}
-	
+
 	public static boolean containsDuplicateCompact(int[] nums){
 		HashSet<Integer> table = new HashSet<Integer>();
 		for( int i = 0; i < nums.length && !table.contains(nums[i]); table.add(nums[i++]) );

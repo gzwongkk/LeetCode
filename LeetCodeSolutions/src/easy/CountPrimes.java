@@ -27,7 +27,7 @@ public class CountPrimes {
 					primeTable.set(j);
 		return n - primeTable.cardinality();
 	}
-	
+
 	public static int countPrimesArray(int n){
 		boolean[] primeTable = new boolean[n];
 		int prime = 0;

@@ -14,7 +14,7 @@ public class RemoveNthNodeFromEnd {
 	 * Given n will always be valid.
 	 * Try to do this in one pass.
 	 */
-	
+
 	public static void main(String[] args) {
 		ListNode[] list = new ListNode[5];
 		for(int i = 0; i < list.length; ++i)
@@ -22,11 +22,11 @@ public class RemoveNthNodeFromEnd {
 		for(int i = 0; i < list.length-1; ++i)
 			list[i].next = list[i+1];
 		System.out.println(list[0]);
-		
+
 		int input = 2;
 		System.out.println(removeNthFromEnd(list[0], input));
 	}
-	
+
 	public static ListNode removeNthFromEnd(ListNode head, int n){
 		ListNode dummy = new ListNode(0), prev = dummy, cur = head;
 		dummy.next = head;

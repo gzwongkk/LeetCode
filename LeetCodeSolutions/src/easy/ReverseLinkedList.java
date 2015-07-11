@@ -3,7 +3,7 @@ package easy;
 import util.ListNode;
 
 public class ReverseLinkedList {
-	
+
 	/**
 	 * Reverse a singly linked list
 	 **/

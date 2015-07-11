@@ -3,7 +3,7 @@ package easy;
 import java.util.HashSet;
 
 public class HappyNumber {
-	
+
 	/**
 	 * Write an algorithm to determine if a number is "happy".
 	 * A happy number is a number defined by the following process: Starting with any positive
@@ -20,7 +20,7 @@ public class HappyNumber {
 		int input = 19;
 		System.out.println(isHappy(input));
 	}
-	
+
 	/*
 	 * 1) O(n) space: uses HashSet to determine existence of recurring number.
 	 * 2) O(1) space: cycle detection in linked list. Make two pointers which first do one at a time
@@ -39,7 +39,7 @@ public class HappyNumber {
 			n = num;
 		}
 	}
-	
+
 	public static boolean isHappyCycle(int n){
 		int first = n, second = n;
 		do{
@@ -49,7 +49,7 @@ public class HappyNumber {
 		} while(first != second);
 		return first == 1;
 	}
-	
+
 	public static int calculation(int n){
 		int ans = 0;
 		for(; n > 0 ; n/=10 )
