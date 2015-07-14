@@ -15,7 +15,7 @@ public class HappyNumber {
 	 * 	8^2 + 2^2 = 68
 	 *  6^2 + 8^2 = 100
 	 *  1^2 + 0^2 + 0^2 = 1
-	 */
+	 **/
 	public static void main(String[] args){
 		int input = 19;
 		System.out.println(isHappy(input));

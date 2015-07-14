@@ -7,7 +7,7 @@ public class MergeSortedArray {
 	 * Note:
 	 * 	You may assume that nums1 has enough space ( size that is greater or equal to m+n ) to hold
 	 * additional elements from nums2. The number of elements initialized in nums1 and num2 are m and n respectively.
-	 */
+	 **/
 	public static void main( String[] args ) {
 		int m = 10, n = 10;
 		int[] nums1 = new int[m+n], nums2 = new int[n];

@@ -15,7 +15,7 @@ public class PascalsTriangle {
 		  [1,3,3,1],
 		 [1,4,6,4,1]
 		]
-	 */
+	 **/
 	public static void main(String[] args) {
 		int numRows = 15;
 		for(List<Integer> list : generate(numRows)){

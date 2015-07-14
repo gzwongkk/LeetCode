@@ -9,7 +9,7 @@ public class RemoveDuplicatesFromSortedList {
 	 * appear only once. For example,
 	 * Given 1->1->2, return 1->2.
 	 * Given 1->1->2->3->3, return 1->2->3.
-	 */
+	 **/
 	public static void main( String[] args ) {
 		ListNode[] list = ListNode.ListNodeArray( 0, 10 );
 		for ( int i = 0; i < list.length-1; i++ )

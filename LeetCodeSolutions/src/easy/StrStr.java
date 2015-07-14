@@ -6,7 +6,7 @@ public class StrStr {
 	 * Implement strStr().
 	 * Returns the index of the first occurrence of needle in haystack,
 	 * or -1 if needle is not part of haystack.
-	 */
+	 **/
 	public static void main(String[] args) {
 		String haystack = "is this what you mean?", needle = "this";
 		System.out.println(strStr(haystack, needle));

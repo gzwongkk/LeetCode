@@ -8,7 +8,7 @@ public class SameTree {
 	 * Given two binary trees, write a function to check if they are equal or not.
 	 * Two binary trees are considered equal if they are structurally identical and
 	 * the nodes have the same value.
-	 */
+	 **/
 	public static void main(String[] args) {
 		TreeNode root1 = new TreeNode(1, 
 				new TreeNode(2, new TreeNode(3), new TreeNode(4)),

@@ -6,7 +6,7 @@ public class PalindromeLinkedList {
 
 	/**
 	 * Given a singly linked list, determine if it is a palindrome.
-	 */
+	 **/
 	public static void main(String[] args) {
 		ListNode[] list = new ListNode[11];
 		for( int i = 0; i < list.length; ++i )

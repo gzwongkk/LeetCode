@@ -8,7 +8,7 @@ public class AddBinary {
 	 * a = "11"
 	 * b = "1"
 	 * Return "100".
-	 */
+	 **/
 	public static void main( String[] args ) {
 		String a = "110001", b = "100110101001";
 		System.out.println(addBinary( a, b ));

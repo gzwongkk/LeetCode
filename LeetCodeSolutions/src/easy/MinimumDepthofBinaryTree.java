@@ -10,7 +10,7 @@ public class MinimumDepthofBinaryTree {
 	 * Given a binary tree, find its minimum depth.
 	 * The minimum depth is the number of nodes along the shortest path
 	 * from the root node down to the nearest leaf node.
-	 */
+	 **/
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode(1, new TreeNode(2, new TreeNode(3), null), null);
 		System.out.println(minDepth(root));

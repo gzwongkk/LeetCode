@@ -12,7 +12,7 @@ public class PascalsTriangle2 {
 	 * Return [1,3,3,1].
 	 * Note:
 	 * COuld you optimize your algorithm to use only O(k) extra space?
-	 */
+	 **/
 	public static void main(String[] args) {
 		int rowIndex = 10;
 		for( Integer i : getRow(rowIndex) )

@@ -20,7 +20,7 @@ public class SymmetricTree {
 		  2   2
 		   \   \
 		   3    3
-	 */
+	 **/
 	public static void main(String[] args) {
 		TreeNode root1 = new TreeNode(1, 
 				new TreeNode(2, new TreeNode(3), new TreeNode(4)),

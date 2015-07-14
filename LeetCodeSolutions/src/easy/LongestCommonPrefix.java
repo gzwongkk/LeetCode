@@ -4,7 +4,7 @@ public class LongestCommonPrefix {
 
 	/**
 	 * Write a function to find the longest common prefix string amongst an array of strings.
-	 */
+	 **/
 	public static void main(String[] args) {
 		String[] input = new String[]{"Testing", "Testing One", "Testing Two", "Test...wait what?"};
 		System.out.println(longestCommonPrefix(input));

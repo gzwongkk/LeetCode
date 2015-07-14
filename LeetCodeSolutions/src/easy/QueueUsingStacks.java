@@ -18,7 +18,7 @@ public class QueueUsingStacks {
 	 * 			operations of a stack.
 	 * 		Your may assume that all operations are valid ( for example, no pop or peek
 	 * 			operations will be called on an empty queue).
-	 */
+	 **/
 
 	public static void main(String[] args) {
 		QueueUsingStacks myQueue = new QueueUsingStacks();

@@ -10,7 +10,7 @@ public class CountAndSay {
 	 * 21 is read off as "one 2", then "one 1" or 1211.
 	 * Given an integer n, generate the nth sequence.
 	 * Note: The sequence of integers will be represented as a string.
-	 */
+	 **/
 	public static void main(String[] args) {
 		int n = 5;
 		System.out.println(countAndSay(n));

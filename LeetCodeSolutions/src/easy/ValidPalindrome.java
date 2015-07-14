@@ -7,7 +7,7 @@ public class ValidPalindrome {
 	 * characters and ignoring cases. For example, 
 	 * "A man, a plan, a canal: Panama" is a palindrome.
 	 * "race a car" is not a palindrome.
-	 */
+	 **/
 	public static void main(String[] args) {
 		System.out.println(isPalindrome("ppp"));
 	}

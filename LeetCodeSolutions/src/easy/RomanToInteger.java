@@ -5,7 +5,7 @@ public class RomanToInteger {
 	/**
 	 * Given a Roman numeral, convert it to an integer.
 	 * Input is guaranteed to be within the range from 1 to 3999.
-	 */
+	 **/
 	public static void main(String[] args) {
 		String roman = "MMXXXVI";
 		System.out.println(romanToInt(roman));

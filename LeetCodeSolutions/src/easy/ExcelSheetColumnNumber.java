@@ -4,7 +4,7 @@ public class ExcelSheetColumnNumber {
 
 	/**
 	 * Given a column title as appear in an Excel sheet, return its corresponding column number.
-	 */
+	 **/
 	public static void main(String[] args) {
 		String input = "AZ";
 		System.out.println(titleToNumber(input));

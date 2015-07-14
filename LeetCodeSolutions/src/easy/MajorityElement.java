@@ -6,7 +6,7 @@ public class MajorityElement {
 	 * Given an array of size n, find the majority element. The majority element is the element
 	 * that appears more than n/2 times.
 	 * You may assume that they array is non-empty and the majority element always exist in the array.
-	 */
+	 **/
 	public static void main(String[] args) {
 		int[] nums = new int[]{0,1,0,1,0,1,0,2,5,3,6,1,1,1,1,8,8,8,8,8,8,8,8,8,8,8,8,888,8,8,8,8,8,0};
 		System.out.println(majorityElement(nums));

@@ -7,7 +7,7 @@ public class ExcelSheetColumnTitle {
 	/**
 	 * Given a positive integer, return its corresponding column title as
 	 * appear in an Excel sheet.
-	 */
+	 **/
 	public static void main(String[] args) {
 		int input = 52;
 		System.out.println(convertToTitle(input));

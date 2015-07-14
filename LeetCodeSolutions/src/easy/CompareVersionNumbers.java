@@ -11,7 +11,7 @@ public class CompareVersionNumbers {
 	 * revision of the second first-level revision.
 	 * Here is an example of version numbers ordering:
 	 * 0.1 < 1.1 < 1.2 < 13.37
-	 */
+	 **/
 	public static void main(String[] args) {
 		System.out.println(compareVersion("1.0.654034251894298162168984621","1.0.654034251894298162168984620"));
 	}

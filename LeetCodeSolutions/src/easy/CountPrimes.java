@@ -6,7 +6,7 @@ public class CountPrimes {
 
 	/**
 	 * Count the number of prime numbers less than a non-negative number, n.
-	 */
+	 **/
 	public static void main(String[] args) {
 		int n = 100;
 		System.out.println(countPrimes(n));

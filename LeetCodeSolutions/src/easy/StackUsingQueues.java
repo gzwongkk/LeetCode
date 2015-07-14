@@ -20,7 +20,7 @@ public class StackUsingQueues {
 	 * 		only standard operations of a queue.
 	 * 	You may assume that all operations are valid ( for example, no pop or
 	 * 		top operations will be called on an empty stack).
-	 */
+	 **/
 
 	public static void main(String[] args) {
 		StackUsingQueues myStack = new StackUsingQueues();

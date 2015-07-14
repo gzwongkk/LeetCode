@@ -9,7 +9,7 @@ public class MaximumDepthOfBinaryTree {
 	 * Given a binary tree, find its maximum depth.
 	 * The maximum depth is the number of nodes along the longest path from the root node
 	 * down to the farthest leaf node.
-	 */
+	 **/
 	public static void main(String[] args) {
 		TreeNode root = new TreeNode(1, new TreeNode(2, new TreeNode(3), null), null);
 		System.out.println(maxDepth(root));

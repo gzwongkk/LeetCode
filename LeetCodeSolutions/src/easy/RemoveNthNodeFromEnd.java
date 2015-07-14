@@ -13,7 +13,7 @@ public class RemoveNthNodeFromEnd {
 	 * Note:
 	 * Given n will always be valid.
 	 * Try to do this in one pass.
-	 */
+	 **/
 
 	public static void main(String[] args) {
 		ListNode[] list = new ListNode[5];

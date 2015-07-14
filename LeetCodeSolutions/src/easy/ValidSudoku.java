@@ -12,7 +12,7 @@ public class ValidSudoku {
 	 * the character '.'. Note:
 	 * A valid Sudoku board (partially filled) is not necessarily solvable. Only the 
 	 * filled cells need to be validated.
-	 */
+	 **/
 	public static void main(String[] args) {
 		char[][] board = new char[][]{
 				".87654321".toCharArray(),
