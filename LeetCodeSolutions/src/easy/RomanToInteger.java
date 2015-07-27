@@ -7,7 +7,7 @@ public class RomanToInteger {
 	 * Input is guaranteed to be within the range from 1 to 3999.
 	 **/
 	public static void main(String[] args) {
-		String roman = "MMXXXVI";
+		String roman = "MMXLVI";
 		System.out.println(romanToInt(roman));
 	}
 
