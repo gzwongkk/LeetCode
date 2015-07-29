@@ -1,6 +1,6 @@
 package medium;
 
-public class PowDouble {
+public class Power {
 
 	/**
 	 * Implement pow(x,n).
