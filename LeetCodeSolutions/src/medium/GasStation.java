@@ -1,6 +1,6 @@
 package medium;
 
-public class Anagrams {
+public class GasStation {
 
 	/**
 	 * There are N gas stations along a circular route, where the amount of gas at station i is gas[i].
@@ -15,13 +15,13 @@ public class Anagrams {
 
 	/*
 	 * At first I thought of DP since it is very similar to all pairs shortest path. But actually it will
-	 * have done a huge amount of extra work by computing the net gain of gas everytime in dp. So a circular
-	 * specific window solution is implemented here, and it is O(n) time O(1) space, super fast.
+	 * have done a huge amount of extra work by computing the net gain of gas every time in DP. So a 
+	 * circular specific window's solution is implemented here, and it is in O(n) time O(1) space, super fast.
 	 */
 	public static int canCompleteCircuit(int[] gas, int[] cost){
         int start = gas.length-1, end = 0, gasTank = gas[start] - cost[start];
         while( start > end ){
-            if( gasTank >= 0 ){t
+            if( gasTank >= 0 ){
                 gasTank += gas[end] - cost[end];
                 ++end;
             } else {
