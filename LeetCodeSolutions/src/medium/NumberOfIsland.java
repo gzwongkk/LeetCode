@@ -30,6 +30,7 @@ public class NumberOfIsland {
 	/*
 	 * This problem critically solve the 3-match or candy crush or puzzle and dragon problem.
 	 * Depth first search is used to check connectivity. Ce n'est pas difficile quoi!
+	 * We could do it recursively, or iteratively but mark the grid instead of having a visited array.
 	 */
 	public static int numIslands(char[][] grid){
 		if( grid.length == 0 ) return 0;
