@@ -30,11 +30,11 @@ public class Anagrams {
 		for( String str : strs ){
 			char[] strChar = str.toCharArray();
 			Arrays.sort(strChar);
-			LinkedList<String> bucket = map.get(strChar);
+			LinkedList<String> bucket = map.get(new String(strChar));
 			if( bucket == null ){
 				bucket = new LinkedList<String>();
 				bucket.add(str);
-				map.put(str, bucket);
+				map.put(new String(strChar), bucket);
 			} else bucket.add(str);
 		}
 		for( String str: map.keySet() ){
