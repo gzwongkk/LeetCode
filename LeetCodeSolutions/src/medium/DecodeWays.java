@@ -23,6 +23,8 @@ public class DecodeWays {
 	/*
 	 * This problem cannot ignore the '0' character, thus there are three cases in DP.
 	 * And we know that decoding "requires" bottom-up approach. O(n) time, O(1) space.
+	 * The reason why the third case is DP_i + DP_j, is that only the branches with a
+	 * single digit element at the end can have two children. 
 	 */
 	public static int numDecodings(String s){
 		char[] str = s.toCharArray();
