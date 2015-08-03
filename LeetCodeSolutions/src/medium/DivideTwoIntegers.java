@@ -13,7 +13,7 @@ public class DivideTwoIntegers {
 	}
 
 	/*
-	 * Similar to the method used in Sqrt, this time we measure how many 2 times divisor can
+	 * Similar to the method used in SquareRoot, this time we measure how many 2 times divisor can
 	 * the dividend have. Some little tricks are used such as using negative integers to 
 	 * prevent overflow and check divisor bound limit.
 	 */
