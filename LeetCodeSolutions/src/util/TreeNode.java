@@ -1,6 +1,7 @@
 package util;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class TreeNode{
 	public int val;
@@ -14,24 +15,19 @@ public class TreeNode{
 	}
 	@Override
 	public String toString(){
-		LinkedList<TreeNode> root = new LinkedList<TreeNode>();
-		LinkedList<TreeNode> leaf = new LinkedList<TreeNode>();
+		Queue<TreeNode> root = new LinkedList<TreeNode>();
 		root.add(this);
-		String output = "";
+		StringBuilder output = new StringBuilder();
 		while( !root.isEmpty() ){
-			for( TreeNode t : root ){
-				if( t.left != null )
-					leaf.add(t.left);
-				if( t.right != null )
-					leaf.add(t.right);
-				output += t.val + " ";
+			for( int count = root.size(); count > 0; --count ){
+				if( root.peek().left != null )
+					root.add(root.peek().left);
+				if( root.peek().right != null )
+					root.add(root.peek().right);
+				output.append(root.poll().val + " ");
 			}
-			root.clear();
-			LinkedList<TreeNode> temp = leaf;
-			leaf = root;
-			root = temp;
-			output += '\n';
+			output.append('\n');
 		}
-		return output;
+		return output.toString();
 	}
 }
