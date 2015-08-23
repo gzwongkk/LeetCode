@@ -18,6 +18,8 @@ public class SortColors {
 	 * Similar to quick sort partition process, keep three pointers for the three groups,
 	 * having the bottom group grows from bottom and top group grows from the end, the middle
 	 * group should be just right after the bottom group.
+	 * 
+	 * Reference: Dutch National Flag Problem.
 	 */
 	public static void sortColors(int[] nums){
 		int i = 0, j = 0, k = nums.length;

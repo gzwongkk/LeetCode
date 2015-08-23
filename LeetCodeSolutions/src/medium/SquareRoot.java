@@ -22,6 +22,8 @@ public class SquareRoot {
 	 * 		it back by using XOR. Genius.
 	 * Both function is O(log n), but in fact, since the maximum value of Integer is 32 bit, so we
 	 * can also say it is O(log 32) => O(1).
+	 * 
+	 * 3) Newton's Method can also be used in this problem. Xn+1 = Xn - f(Xn)/f'(Xn).
 	 */
 	public static int mySqrt(int x){
 		int low = 1, high = x, ans = 0;
@@ -45,5 +47,11 @@ public class SquareRoot {
 			bit >>= 1;
 		}
 		return (int)ans;
+	}
+	
+	public static int newtonSqrt(int x){
+		double g = x;
+		while( Math.abs(g * g - x) > 0.000001 ) g = ( g + x / g ) / 2;
+		return (int) g;
 	}
 }
