@@ -17,6 +17,15 @@ public class ExcelSheetColumnTitle {
 	 * Break down into String using the characteristics of char.
 	 */
 	public static String convertToTitle(int n){
+		StringBuilder ans = new StringBuilder();
+		while( n > 0 ){
+			ans.append((char)(--n%26+65));
+			n /= 26;
+		}
+		return ans.reverse().toString();
+	}
+	
+	public static String convertToTitleStack(int n){
 		Stack<Character> stack = new Stack<Character>();
 		while( n > 0 ){
 			stack.push((char)(--n%26+65));
