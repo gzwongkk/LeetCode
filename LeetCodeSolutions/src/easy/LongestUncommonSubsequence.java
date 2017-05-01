@@ -17,7 +17,9 @@ public class LongestUncommonSubsequence {
 		System.out.println(findLUSlength("abc", "abc"));
 	}
 
-	// sequential set difference
+	/* sequential set difference, couldn't get it and did a O(n^2) dynamic programming trial
+	 * before looking at others' answers 
+	 */
 	public static int findLUSlength(String a, String b) {
 		return a.equals(b)? -1: Math.max(a.length(), b.length());
 	}
